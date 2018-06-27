@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pMessage 1.0.0</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/peerjs/0.3.9/peer.min.js"></script>
+	<script type="text/javascript" src="stuff.js"></script>
+</head>
+<body class="teal lighten-5">
+	<div class="row flow-text">
+		<div class="col l8 offset-l4 s12 stable vertical">
+			<div id="chatHolder" class="chatHolder">
+				
+			</div>
+			
+			<div id="messageBar" class="col s12 messageBar initialHidden">
+				<!-- <div class="divider"></div> -->
+				<div>
+					<input type="text" id="chatInput" class="chatInput" placeholder="Enter message...">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="container" class="flow-text stable vertical teal lighten-5">
+		<div class="half valign-wrapper">
+			<div class="center-block">
+				<p class="waves-effect waves-light btn initLeft" id="server" onclick="onTypeSelect('s')">Server</p>
+			</div>
+		</div>
+		<div class="title valign-wrapper">
+			<div id="title" class="center-block">pMessage.</div>
+		</div>
+		<div class="half valign-wrapper vertical">
+				<div id="clientKeyHolder" class="clientKeyHolder center-block initialHidden">
+					<div class="divider"></div>
+					<input type="text" id="peerKey" placeholder="Enter peer ID..." class="peerKey">
+				</div>
+				<div id = "clientHolder" class="clientHolder center-block">
+					<p class="waves-effect waves-light btn initRight" id="client" onclick="onTypeSelect('c')">Client</p>
+				</div>
+		</div>
+	</div>
+</body>
+</html>

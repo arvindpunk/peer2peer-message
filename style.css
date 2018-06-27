@@ -1,0 +1,89 @@
+html, body {
+	height: 100%;
+}
+
+.stable {
+	display: flex;
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.vertical {
+	flex-direction: column;
+}
+
+.chatHolder {
+	flex-grow: 1;
+	overflow-y: auto;
+}
+
+.peerKey {
+
+}
+
+.title {
+	height: 100%;
+	/*margin: auto;*/
+	flex-grow: 1;
+}
+
+.half {
+	height: 100%;
+	flex-grow: 2;
+	display: flex;
+}
+
+.clientKeyHolder {
+	/*display: none;*/
+}
+
+/*Swipes begin*/
+.swipeLeft {
+	transform: translateX(-200%);
+	-webkit-transform: translateX(-200%);
+	transition-duration: 0.5s;
+}
+
+.swipeRight {
+	transform: translateX(200%);
+	-webkit-transform: translateX(200%);
+	transition-duration: 0.5s;
+}
+
+.swipeDown {
+	transform: translateY();
+}
+/*Swipes end*/
+
+
+/*Visibility begin*/
+.visible {
+	visibility: visible;
+	/*transition-duration: 0.5s;*/
+}
+
+.hidden {
+	visibility: hidden;
+	transition-duration: 0.5s;
+}
+
+.initialHidden {
+	visibility: hidden;
+	opacity: 0;
+}
+/*Visibility end*/
+
+
+/*Fades begin*/
+.fadeIn {
+	opacity: 1;
+	transition-duration: 0.5s;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+/*Fades end*/
