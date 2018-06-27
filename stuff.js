@@ -2,7 +2,7 @@ let peer;
 let clientSelected = false;
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-  peer = new Peer();
+  peer = new Peer({secure: true});
 });
 
 function onTypeSelect(type) {
